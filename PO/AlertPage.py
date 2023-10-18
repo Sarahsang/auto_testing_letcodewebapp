@@ -32,21 +32,21 @@ class AlertPage:
     def handle_modern_alert(self):
         self.driver.find_element(*self.fourth_alert_button).click()
         
-    def handle_simple_alert(self):
-        self.driver.find_element(*self.first_alert_button).click()
-        self.driver.switch_to.alert.accept()
+    # def handle_simple_alert(self):
+    #     self.driver.find_element(*self.first_alert_button).click()
+    #     self.driver.switch_to.alert.accept() # method:switch_to.alert.accept()
 
-    def handle_confirm_alert(self):
-        self.driver.find_element(*self.second_alert_button).click()
-        alert = self.driver.switch_to.alert
-        print(alert.text)
-        alert.dismiss()
+    # def handle_confirm_alert(self):
+    #     self.driver.find_element(*self.second_alert_button).click()
+    #     alert = self.driver.switch_to.alert
+    #     print(alert.text)
+    #     alert.dismiss()
 
-    def handle_prompt_alert(self, name):
-        self.driver.find_element(*self.third_alert_button).click()
-        alert = self.driver.switch_to.alert
-        alert.send_keys(name)
-        alert.accept()
+    # def handle_prompt_alert(self, name):
+    #     self.driver.find_element(*self.third_alert_button).click()
+    #     alert = self.driver.switch_to.alert
+    #     alert.send_keys(name)
+    #     alert.accept()
 
     def handle_modern_alert(self):
         self.driver.find_element(*self.fourth_alert_button).click()
