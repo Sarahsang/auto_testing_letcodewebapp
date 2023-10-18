@@ -18,7 +18,7 @@ class TestAlertPage:
         alert_page = AlertPage(self.driver)
 
         # Navigate to the home page and click the alert button
-        home_page.click_dialog_button()  # Assuming you have a method named click_alert_button in HomePage class
+        home_page.click_dialog_button()  
 
         # 1. Accept the simple alert
         alert_page.handle_simple_alert()

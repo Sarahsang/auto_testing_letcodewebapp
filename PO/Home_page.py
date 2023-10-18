@@ -8,7 +8,7 @@ class HomePage:
         # Define locators for elements on the home page
         self.edit = (By.LINK_TEXT, "Edit")
         self.click = (By.LINK_TEXT, "Click")
-        self.drop_down = (By.NAME, "Drop_Down")
+        self.drop_down = (By.LINK_TEXT, "Drop-Down")
         self.dialog = (By.LINK_TEXT, "Dialog")
         
 

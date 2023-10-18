@@ -7,10 +7,10 @@ class AlertPage:
         self.driver = driver
 
         # Define locators for elements related to the ShoppingCartPage
-        self.first_select_box = (By.XPATH, "//button[@id='accept']")
-        self.second_select_box = (By.XPATH, "//button[@id='confirm']")
-        self.third_select_box = (By.XPATH, "//button[@id='prompt']")
-        self.fourth_select_box = (By.XPATH, "//button[@id='modern']")
+        self.first_alert_button = (By.XPATH, "//button[@id='accept']")
+        self.second_alert_button = (By.XPATH, "//button[@id='confirm']")
+        self.third_alert_button = (By.XPATH, "//button[@id='prompt']")
+        self.fourth_alert_button = (By.XPATH, "//button[@id='modern']")
 
     def handle_simple_alert(self):
         self.driver.find_element(*self.first_alert_button).click()
@@ -28,9 +28,6 @@ class AlertPage:
         alert = Alert(self.driver)
         alert.send_keys(name)
         alert.accept()
-
-    def handle_modern_alert(self):
-        self.driver.find_element(*self.fourth_alert_button).click()
         
     # def handle_simple_alert(self):
     #     self.driver.find_element(*self.first_alert_button).click()
@@ -50,3 +47,5 @@ class AlertPage:
 
     def handle_modern_alert(self):
         self.driver.find_element(*self.fourth_alert_button).click()
+        close_button = self.driver.find_element(By.CSS_SELECTOR, ".modal-close.is-large")
+        close_button.click()

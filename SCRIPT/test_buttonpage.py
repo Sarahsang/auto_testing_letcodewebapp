@@ -1,4 +1,7 @@
 import pytest
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 from Base.base import BaseSetup
 from PO.ButtonPage import ButtonPage
 from PO.Home_Page import HomePage
@@ -17,6 +20,10 @@ class TestButtonPage:
         home_page = HomePage(self.driver)
         button_page = ButtonPage(self.driver)
 
+        # # Explicit wait for the edit button to be clickable
+        # wait = WebDriverWait(self.driver, 10)
+        # wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@id='home']")))
+        
         # Click the "Click" button on the home page
         home_page.click_click_button()
 

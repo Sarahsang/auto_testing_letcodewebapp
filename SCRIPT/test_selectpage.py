@@ -18,7 +18,7 @@ class TestSelectPage:
         select_page = SelectPage(self.driver)
 
         # Navigate to home page and click the select button
-        home_page.click_dropdown_button()  # Assuming you have this method to click the select button
+        home_page.click_dropdown_button()  
 
         # 1. Select the apple using visible text
         select_page.select_fruit_by_visible_text("Apple")
