@@ -1,6 +1,4 @@
 import pytest
-from Base.base import BaseSetup
-from PO.Home_Page import HomePage
 from PO.AlertPage import AlertPage
 
 class TestAlertPage:

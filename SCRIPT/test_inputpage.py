@@ -1,7 +1,6 @@
 import pytest
-from Base.base import BaseSetup
 from PO.InputPage import InputPage
-from PO.Home_Page import HomePage
+
 
 class TestInputPage:
 
