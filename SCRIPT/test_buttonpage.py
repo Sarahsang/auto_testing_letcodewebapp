@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from Base.base import BaseSetup
 from PO.ButtonPage import ButtonPage
-from PO.Home_Page import HomePage
+from PO.Home_page import HomePage
 
 class TestButtonPage:
 
